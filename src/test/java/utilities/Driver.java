@@ -64,6 +64,32 @@ public class Driver {
         return driver;
     }
 
+    public static void cashWiseSignIn(){
+        // uses url and credentials from config file
+
+        driver.get(url);
+
+        WebElement signIn = driver.findElement(
+                By.xpath
+                        ("//button[@class='MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1o6c4rv']"));
+        signIn.click();
+
+        WebElement email = driver.findElement(
+                By.xpath("//input[@id=':r3:']"));
+
+        email.sendKeys(login);
+
+        WebElement passwordField = driver.findElement(
+                By.xpath("//input[@id=':r4:']"));
+        passwordField.sendKeys(password);
+
+        WebElement singIn2 = driver.findElement
+                (By.xpath("//button[@class='MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root css-hl90zr']"));
+
+        singIn2.click();
+
+    }
+
 
     public static void closeBrowser(){
         if(driver!= null){
