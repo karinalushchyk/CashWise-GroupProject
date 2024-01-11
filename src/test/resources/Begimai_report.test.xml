@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cashwise">
+    <test name="Remind before tests">
+        <classes>
+            <class name="tests.Report_chart_tests"></class>
+        </classes>
+    </test>
+</suite>
