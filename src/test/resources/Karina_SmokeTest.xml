@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KarinaTestNG">
+    <test name="Cash wise">
+        <classes>
+            <class name="Tests.KarinaTest">
+            </class>
+        </classes>
+    </test>
+</suite>
