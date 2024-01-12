@@ -203,6 +203,7 @@ public class SalesTests {
 
     @Test(dependsOnMethods = "archieveAllClients")
     public void verifyClientSearchBar() throws IOException {
+        driver.navigate().refresh();
         salesPage.addClientCheckSearchBar();
     }
 
