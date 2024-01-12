@@ -1,16 +1,14 @@
-package tests;
+package Tests;
 
 import com.github.javafaker.Faker;
-import com.google.common.io.Files;
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.CashwiseSignIn;
 import pages.Report_chart_page;
 import utilities.Driver;
-import utilities.UtilWait;
 
 import java.io.File;
 
