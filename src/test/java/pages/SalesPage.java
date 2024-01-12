@@ -299,6 +299,7 @@ public class SalesPage {
         catch (Throwable e){
             System.err.println("Search element not found for EMAIL " + e.getMessage());
         }
+        enterEmailTitleNameField.sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.DELETE));
 
 
 

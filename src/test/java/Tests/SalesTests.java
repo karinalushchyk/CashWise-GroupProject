@@ -201,7 +201,7 @@ public class SalesTests {
         salesPage.archiveClients();
     }
 
-    @Test
+    @Test(dependsOnMethods = "archieveAllClients")
     public void verifyClientSearchBar() throws IOException {
         salesPage.addClientCheckSearchBar();
     }
