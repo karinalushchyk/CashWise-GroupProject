@@ -3,7 +3,7 @@
 
     <test name="Sales module test" >
         <classes>
-            <class name="tests.SalesTests">
+            <class name="Tests.SalesTests">
 
             </class>
         </classes>

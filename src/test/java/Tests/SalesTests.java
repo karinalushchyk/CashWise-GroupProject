@@ -112,6 +112,12 @@ public class SalesTests {
             System.err.println("Error while waiting for the notification to appear: "+ e.getMessage());
         }
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
         Assert.assertEquals(salesPage.underProductsAndServicesPopUpService.getText(),"Сервис successfully created");
 
 
@@ -193,6 +199,11 @@ public class SalesTests {
             throw new RuntimeException(e);
         }
         salesPage.archiveClients();
+    }
+
+    @Test
+    public void verifyClientSearchBar() throws IOException {
+        salesPage.addClientCheckSearchBar();
     }
 
     public void killSuit(){
