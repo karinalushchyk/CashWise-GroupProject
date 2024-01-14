@@ -1,7 +1,7 @@
 package Tests;
 
 import Pages.AizadaPages;
-import Pages.ReportsPage;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
